@@ -13,6 +13,11 @@ test("form header renders", () => {
 
 test("form shows success message on submit with form details", () => {
     render(<CheckoutForm />)
+    const {getByLabelText} = screen;
+    const first = getByLabelText(/first name/i);
+    userEvent.type(first, "Clayton");
+    const last = getByLabelText(/last name/i);
+    userEvent.type(last, 'Wilkerson');
     const button = screen.getByRole('button')
     userEvent.click(button);
     const success = screen.getByText(/You have ordered some plants! Woo-hoo!/i);
