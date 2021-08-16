@@ -8,4 +8,4 @@ worker.start();
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-const myName = 'clayton';
+const myName = 'clayton-wilkerson';
