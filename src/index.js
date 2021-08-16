@@ -7,3 +7,5 @@ const { worker } = require('./mocks/browser');
 worker.start();
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+const myName = 'clayton-wilkerson';
